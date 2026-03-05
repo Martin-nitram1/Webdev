@@ -39,3 +39,76 @@ Nav ul li a:hover {
     transform: scale(1.6) 0.3s ease;
     transition: color 0.3s ease;
 }
+
+main h1{
+    text-align: center;
+    margin-top: 2rem;
+    color:indianred;
+    font-size: 35px;
+}
+main p {
+    text-align: center;
+    margin-top: 1rem;
+    color:indigo;
+    font-size: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 2rem;
+    border: solid 3px indigo;
+    padding: 1rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.images {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    width: 50%;
+    border-right: 5px solid indigo;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
+.images figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.images h2 {
+    color:indigo;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.images figure img {
+    width: 360px;
+    height: 350px;
+}
+
+.videos figure video {
+    width: 460px;
+    height: 350px;
+}
+
+.videos h2 {
+    color:indigo;
+    font-size: 25px;
+    text-align: center;
+}
+
+footer {
+    background-color:rgb(251, 207, 140);
+    color:brown;
+    text-align: center;
+    padding: 1rem;
+    height: 20px;
+}   
