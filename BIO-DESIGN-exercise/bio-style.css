@@ -1,29 +1,28 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0, auto;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url(./images/pexels-julespalmer7-6258910.jpg);
-    background-size: cover;
+    background-color: black;
     color: white;
 }
 
 nav {
-    color: white;
-    padding: 10px;
-    background-color: whitesmoke;
+    padding: 0;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 30px;
     box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
     opacity: 0.9;
     position: sticky;
     top: 0;
+    height: 60px;
+    margin-bottom: 0;
+    z-index: 1000;
 }
 
 .logo img {
@@ -31,12 +30,13 @@ nav {
     width: auto;
 }
 .logo{
-    margin-right: 20px;
+    margin-left: 15px;
 }
+
 
 nav ul {
     list-style-type: none;
-    margin: 0;
+    margin-left: 0;
     padding: 0;  
     display: flex;
 }
@@ -44,29 +44,147 @@ nav ul {
 nav a {
     color: indigo;
     text-decoration: none;;
-    margin: 0 15px;
     display: flex;
-
+    margin: 0 15px;
 }
 
 nav a:hover {
     color: red;
     text-decoration: underline;
     transition: color 0.3s ease;
-    transform: scale(1.1);}
-
-header, main {
-    padding: 5px;
-    max-width: 800px;
-    margin-left: 30px;
+    transform: scale(1.1);
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     background-image: linear-gradient(rgba(88,87,87,0.6), rgba(88, 87, 87, 0.6)), url(./images/pexels-julespalmer7-6258910.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     min-height: 100vh;
+     overflow: hidden;
+     margin-top: 0;
+     
+}
+
+.intro{
+    font-size: 40px;
+    width: 75%; 
+    margin-top: 0;
+}
+header p{
+    font-size: 15px;
+    text-align: center;
+    text-justify: center;
+}   
+.about {
+    background-image: linear-gradient(rgba(88,87,87,0.6), rgba(88, 87, 87, 0.6)), url(./images/pexels-alscre-2847648.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.about h2{
+    font-size: 30px;
+    width: 90%
+    max-width: 800px;
+    padding-top: 40px;
+}
+
+.about p{
+    padding: 30px 70px;
+    font-size: 20px;
+    
+}
+
+.projects{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.projects h2{
+    font-size: 30px;
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.projects ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-list li{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    color: indigo;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 10px 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(./images/pexels-danielabsi-952670.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hobbies {
+    background-image: linear-gradient(rgba(88,87,87,0.6), rgba(88, 87, 87, 0.6)), url(./images/pexels-joyston-judah-331625-933054.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.hobbies h2{
+    font-size: 30px;
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-justify: center;
+}
+.hobbies ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.hobbies li{
+    background-color: whitesmoke;
+    color: indigo;
+    width: 200px;
+    height: 150px;
+    max-width: 600px;
+    padding: 20px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 footer {
     background-color: whitesmoke;
     color: indigo;
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
     box-shadow: 0 -5px 4px rgba(0, 0, 0, 0.1);
     opacity: 0.9;
 }
